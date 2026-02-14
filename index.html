@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gremio de Aventureros - Gestión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pergamino">
+        <header>
+            <h1>📜 Sistema de Registro del Gremio</h1>
+        </header>
+
+        <section id="ficha-aventurero">
+            <div class="card">
+                <h2>Ficha de Aventurero</h2>
+                <p><strong>Nombre:</strong> <span id="disp-nombre">Gusitavo</span></p>
+                <p><strong>Rango:</strong> <span id="disp-rango">Registro</span></p>
+                <p><strong>Puntos:</strong> <span id="disp-puntos">0</span> / 100</p>
+                <div class="barra-progreso">
+                    <div id="barra" style="width: 0%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tablon">
+            <h2>⚔️ Tablón de Misiones</h2>
+            <div class="filtros">
+                <button onclick="mostrarTablon('facil')">Fáciles (15 pts)</button>
+                <button onclick="mostrarTablon('medio')">Medios (50 pts)</button>
+            </div>
+
+            <div id="misiones-container">
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
